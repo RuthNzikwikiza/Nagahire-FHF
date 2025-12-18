@@ -20,7 +20,7 @@ const BookingPage = () => {
   };
 
   const handleWhatsApp = () => {
-    const anithaNumber = "250788747861"; // Replace with actual number
+    const anithaNumber = "250784466988"; 
     const message = `${messageFromState}%0A${productFromState ? `Product: ${productFromState.title}%0APrice: ${productFromState.price}%0A` : ""}Name: ${form.name}%0AEmail: ${form.email}%0APhone: ${form.phone}%0ADate: ${form.date}%0ANotes: ${form.notes}`;
     const url = `https://wa.me/${anithaNumber}?text=${message}`;
     window.open(url, "_blank");
