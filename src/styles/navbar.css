@@ -1,0 +1,120 @@
+.navbar {
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: fixed;   /* CHANGE from sticky to fixed */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+/* LOGO */
+.nav-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid #d63384;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  padding: 5px 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active-link {
+  color: #d63384;
+}
+
+.nav-links li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #d63384;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active-link::after {
+  width: 100%;
+}
+
+/* HAMBURGER ICON */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    padding: 15px;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display: none;
+    box-shadow: -2px 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-bottom: 15px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

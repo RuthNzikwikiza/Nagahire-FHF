@@ -1,0 +1,56 @@
+.booking-page {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.booking-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #d63384;
+  margin-top: 120px;
+}
+
+.product-info {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f7f7f7;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.booking-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.whatsapp-btn {
+  padding: 14px;
+  background: #d63384;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background: #d63384;
+}
