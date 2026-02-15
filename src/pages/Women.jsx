@@ -55,7 +55,9 @@ const Women = () => {
                 <img src={product.image} alt={product.title} />
                 <h3>{product.title}</h3>
                 <p className="description">{product.description}</p>
-                <p className="price">{product.price}</p>
+               <p className="price">
+  {Number(product.price).toLocaleString()} RWF
+</p>
                 <button onClick={() => bookProduct(product)}>
                   Book this style
                 </button>
