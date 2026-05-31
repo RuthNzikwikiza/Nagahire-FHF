@@ -6,7 +6,6 @@ import logo from "../assets/logo.jpeg";
 const Home = () => {
   const navigate = useNavigate();
 
-  // Scroll to Services section
   const scrollToServices = () => {
     const servicesSection = document.getElementById("services-section");
     if (servicesSection) {
