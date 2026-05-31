@@ -144,7 +144,7 @@ const goToWomen = () => {
             <h4>- Frida NIYONKURU</h4>
           </div>
           <div className="testimonial-card">
-            <p>"Nagahire Fashion Hub me carefully and the dress fit flawlessly. Highly recommend their services!"</p>
+            <p>"Nagahire Fashion Hub measured me carefully and the dress fit flawlessly. Highly recommend their services!"</p>
             <h4>- Erica UMURINGA</h4>
           </div>
           <div className="testimonial-card">

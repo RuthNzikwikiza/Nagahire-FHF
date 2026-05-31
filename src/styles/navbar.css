@@ -118,3 +118,40 @@
     display: block;
   }
 }
+/* ADMIN LOGIN BUTTON - desktop only */
+.admin-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #d63384;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+.admin-btn:hover {
+  background: #b02070;
+}
+
+/* Hide mobile version on desktop */
+.admin-btn-mobile {
+  display: none;
+}
+
+/* On mobile: hide desktop button, show mobile version */
+@media (max-width: 768px) {
+  .admin-btn {
+    display: none;
+  }
+  .admin-btn-mobile {
+    display: block;
+  }
+  .admin-btn-mobile a {
+    color: #d63384;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+  }
+}

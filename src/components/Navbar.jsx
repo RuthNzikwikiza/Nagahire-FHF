@@ -7,14 +7,9 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Handle scroll for shadow
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 20);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -23,10 +18,9 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
-
         {/* Logo */}
         <div className="logo">
-          <img src={logo} alt="logo" className="nav-logo" /> 
+          <img src={logo} alt="logo" className="nav-logo" />
           <Link to="/">NagahireFashionHub</Link>
         </div>
 
@@ -38,26 +32,43 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
-  <NavLink to="/men" className={({ isActive }) => (isActive ? "active-link" : "")}>
-    Men
-  </NavLink>
-</li>
-
-<li>
-  <NavLink to="/women" className={({ isActive }) => (isActive ? "active-link" : "")}>
-    Women
-  </NavLink>
-</li>
+            <NavLink to="/men" className={({ isActive }) => (isActive ? "active-link" : "")}>
+              Men
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/women" className={({ isActive }) => (isActive ? "active-link" : "")}>
+              Women
+            </NavLink>
+          </li>
           <li>
             <NavLink to="/booking" className={({ isActive }) => (isActive ? "active-link" : "")}>
               Bookings
             </NavLink>
           </li>
+          <li className="admin-btn-mobile">
+            <a
+              href="https://nagahire-fhb-1.onrender.com/accounts/login/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Admin Login
+            </a>
+          </li>
         </ul>
 
-        {/* Mobile menu icon */}
+        {/* Admin Login Button (desktop) */}
+        <a
+          href="https://nagahire-fhb-1.onrender.com/accounts/login/"
+          target="_blank"
+          rel="noreferrer"
+          className="admin-btn"
+        >
+          Admin Login
+        </a>
+
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-          ☰
+          <span>&#9776;</span>
         </div>
       </div>
     </nav>
