@@ -1,4 +1,4 @@
-import AppRouter from "./router/index.jsx";
+﻿import AppRouter from "./router/index.jsx";
 import Navbar from "./components/Navbar";
 import "./styles/globals.css";
 
@@ -10,6 +10,5 @@ function App() {
     </>
   );
 }
-console.log("App loaded!");
 
 export default App;
