@@ -49,7 +49,7 @@ export default function Navbar() {
           <li className="admin-btn-mobile">
             <a
               href="https://nagahire-fhb-1.onrender.com/accounts/login/"
-              target="_blank"
+              target="_parent"
               rel="noreferrer"
             >
               Admin Login
@@ -60,7 +60,6 @@ export default function Navbar() {
         {/* Admin Login Button (desktop) */}
         <a
           href="https://nagahire-fhb-1.onrender.com/accounts/login/"
-          target="_blank"
           rel="noreferrer"
           className="admin-btn"
         >

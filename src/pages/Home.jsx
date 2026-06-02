@@ -190,9 +190,9 @@ const goToWomen = () => {
             <p>Email: anithanagahire1@gmail.com</p>
             <p>Phone: +250 784 466 988</p>
             <div className="footer-socials">
-              <a href="https://instagram.com/anny_gaella" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-              <a href="https://wa.me/250784466988" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
-              <a href="https://tiktok.com/@nagahireanitha" target="_blank" rel="noopener noreferrer"><FaTiktok /></a>
+              <a href="https://instagram.com/anny_gaella" target="_parent" rel="noopener noreferrer"><FaInstagram /></a>
+              <a href="https://wa.me/250784466988" target="_parent" rel="noopener noreferrer"><FaWhatsapp /></a>
+              <a href="https://tiktok.com/@nagahireanitha" target="_parent" rel="noopener noreferrer"><FaTiktok /></a>
             </div>
           </div>
         </div>
